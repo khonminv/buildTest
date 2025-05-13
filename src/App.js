@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Redux from './Redux';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+	let containerStyle={
+		padding: 20
+	};
+
+	let h1Style={
+		fontSize: 24,
+		fontWeight: "normal"
+	};
+
+	return(
+		<div className="container" style={containerStyle}>
+			<h1 style={h1Style}>React Example</h1>
+			<Redux />
+		</div>
+	);
 }
 
 export default App;
